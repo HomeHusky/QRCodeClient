@@ -23,9 +23,9 @@ import { useAppContext } from "../../context/appContext";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { getPicPath } from "../../utils";
+import { makeRequest } from "../../axios";
 
 const settings = ['Hồ sơ', 'Tài khoản', 'Bảng điều khiển', 'Đăng xuất'];
 
@@ -50,7 +50,7 @@ const Navbar = () => {
     event.preventDefault();
     handleCloseUserMenu();
     try {
-      await axios.post("https://qr-code-backend-pi.vercel.app/api/auth/logout", null, {
+      await makeRequest.post("/auth/logout", null, {
         headers: {
           Authorization: `Bearer ${currentUser.accessToken}`,
         },

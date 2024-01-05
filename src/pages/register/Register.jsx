@@ -13,12 +13,12 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { getPicPath } from "../../utils";
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import { makeRequest } from '../../axios';
 
 function Copyright(props) {
   return (
@@ -84,7 +84,7 @@ export default function Register() {
       return;
     }
     try {
-      const result = await axios.post("https://qr-code-backend-pi.vercel.app/api/auth/register", inputs);
+      const result = await makeRequest.post("/auth/register", inputs);
       console.log(result);
       if(result.status === 200){
         navigate('/login');
