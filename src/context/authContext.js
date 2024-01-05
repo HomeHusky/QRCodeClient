@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("http://qr-code-backend-pi.vercel.app/api/auth/login", inputs, {
+    const res = await axios.post("https://qr-code-backend-pi.vercel.app/api/auth/login", inputs, {
       withCredentials: true,
     });
 

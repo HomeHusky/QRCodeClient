@@ -70,19 +70,19 @@ const Profile = () => {
           <div className="profileContainer">
             <div className="uInfo">
               <div className="left">
-                <a href="http://facebook.com">
+                <a href="https://facebook.com">
                   <FacebookTwoToneIcon fontSize="large" />
                 </a>
-                <a href="http://facebook.com">
+                <a href="https://facebook.com">
                   <InstagramIcon fontSize="large" />
                 </a>
-                <a href="http://facebook.com">
+                <a href="https://facebook.com">
                   <TwitterIcon fontSize="large" />
                 </a>
-                <a href="http://facebook.com">
+                <a href="https://facebook.com">
                   <LinkedInIcon fontSize="large" />
                 </a>
-                <a href="http://facebook.com">
+                <a href="https://facebook.com">
                   <PinterestIcon fontSize="large" />
                 </a>
               </div>

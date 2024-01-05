@@ -11,7 +11,7 @@ const ScanQR = () => {
     if (data) {
       try {
         // 2. Gửi Yêu Cầu Đến Máy Chủ
-        const response = await axios.post('http://qr-code-backend-pi.vercel.app/api/scan', { qrData: data });
+        const response = await axios.post('https://qr-code-backend-pi.vercel.app/api/scan', { qrData: data });
 
         // 5. Render Trang Từ Nội Dung Phản Hồi
         setResult(response.data);
