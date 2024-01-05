@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const makeRequest = axios.create({
-  baseURL: "https://qr-code-backend-eight.vercel.app//api/",
+  baseURL: "https://10.72.32.50:443//api/",
   withCredentials: true,
 });
