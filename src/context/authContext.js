@@ -9,9 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await makeRequest.post("/auth/login", inputs, {
-      withCredentials: true,
-    });
+    const res = await makeRequest.post("/auth/login", inputs);
 
     setCurrentUser(res.data)
   };
