@@ -84,7 +84,7 @@ export default function Register() {
       return;
     }
     try {
-      const result = await axios.post("http://qr-code-sigma-eight.vercel.app:443/api/auth/register", inputs);
+      const result = await axios.post("http://qr-code-backend-pi.vercel.app/api/auth/register", inputs);
       console.log(result);
       if(result.status === 200){
         navigate('/login');

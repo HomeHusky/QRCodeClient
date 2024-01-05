@@ -50,7 +50,7 @@ const Navbar = () => {
     event.preventDefault();
     handleCloseUserMenu();
     try {
-      await axios.post("http://qr-code-sigma-eight.vercel.app:443/api/auth/logout", null, {
+      await axios.post("http://qr-code-backend-pi.vercel.app/api/auth/logout", null, {
         headers: {
           Authorization: `Bearer ${currentUser.accessToken}`,
         },

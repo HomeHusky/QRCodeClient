@@ -240,7 +240,7 @@ const OnePicEdit = React.memo((props) => {
             <Stack spacing={2}>
               <QRCode
                   id='qrcode'
-                  value={`http://qr-code-sigma-eight.vercel.app:3000/singleImage/unLog/${pic.id}/${pic.qrImage}`}
+                  value={`http://qr-code-client.vercel.app/singleImage/unLog/${pic.id}/${pic.qrImage}`}
                   size={290}
                   level={'H'}
                   includeMargin={true}
